@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgstyle"
+    tools:context=".PostActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/buttonstyle"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_add" />
+
+        <EditText
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:hint="Post Title"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+
+            />
+
+        <EditText
+
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"
+            android:hint="Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#f0f"
+            android:gravity="center"
+            android:inputType="textShortMessage"
+            android:text="POST"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
